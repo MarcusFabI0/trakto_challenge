@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="login">
+      <img class="login__logo" src="/assets/images/trakto-logo.svg" alt="logo" />
+      <h1>Olá, faça login em sua conta.</h1>
+    </div>
+      <form class="login_form">
+      <label for="email">E-mail:</label>
+      <input
+        [(ngModel)]="email"
+        type="email"
+        id="email"
+        name="email"
+        required
+      />
+      <label for="password">Senha:</label>
+      <input
+        [(ngModel)]="password"
+        type="password"
+        id="password"
+        name="password"
+        required
+      />
+      <p class="error" *ngIf="error">{{error}}</p>
+      <button (click)="login()" type="submit">
+        <img class="loadingImg"  *ngIf="buttonLoading"  src="../../../../assets/images/loading.svg"/>
+      {{ buttonLoading ? "Entrando..." : "Entrar" }}
+      </button>
+  </form>
+</div>
+
+
+

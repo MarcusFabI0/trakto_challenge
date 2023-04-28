@@ -1,0 +1,10 @@
+<app-header></app-header>
+<div class="container">
+  <section class="dashboard-section">
+    <div class="dashboard-images" *ngFor="let list of homeList">
+      <h2 class="title">{{list.title}}</h2>
+      <div class={{list.colorBar}}></div>
+      <img class="img{{list.id}}" src="{{list.img}}">
+    </div>
+  </section>
+</div>

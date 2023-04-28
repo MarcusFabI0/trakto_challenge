@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("/assets/images/dashboardBG.png");
+  background-size: cover;
+  overflow: auto;
+
+}
+
+.dashboard-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+}
+
+.dashboard-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+  flex-basis: calc(33.33% - 20px);
+}
+
+.title{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48.92px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+
+.blue{
+  width: 28px;
+  height: 4px;
+  background: #4173CD;
+  margin-bottom: 30px;
+}
+
+.green{
+  width: 28px;
+  height: 4px;
+  background: #1DC763;
+  margin-bottom: 30px;
+}
+
+.pink{
+  width: 28px;
+  height: 4px;
+  background: #F6B5FF;
+  margin-bottom: 30px;
+}
+
+.red{
+  width: 28px;
+  height: 4px;
+  background: #FF0000;
+  margin-bottom: 30px;
+}
